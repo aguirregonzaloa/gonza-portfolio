@@ -6,7 +6,37 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 62.5%;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+}
+
+.nav-bar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: greenyellow;
+}
+
+.nav-item {
+  float: right;
+}
+
+.nav-item-link,
+.nav-item-link:link,
+.nav-item-link:visited {
+  color: red;
+  text-decoration: none;
+  padding: 16px 14px;
+  text-align: center;
+  display: block;
+}
+
+.nav-item-link:hover {
+  background-color: hotpink;
 }
