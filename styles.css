@@ -98,6 +98,11 @@ nav {
   float: left;
 }
 
+.projects img {
+  width: 36rem;
+  height: 42rem;
+}
+
 .colum-2-2{
   float:right;
 }
@@ -107,3 +112,9 @@ nav {
   clear: both;
   display: table;
 }
+
+.footer {
+  background-image: linear-gradient(to right bottom, rgba(214,25,15,0.2), rgba(214,225,15,0.2));
+
+}
+
