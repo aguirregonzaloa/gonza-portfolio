@@ -77,13 +77,12 @@ nav {
 .projects {
   width:100%;
   background-image: linear-gradient(to right bottom, rgb(230, 230, 230), rgb(161, 161, 161));
-  padding-top: 5rem;
+  padding: 5rem;
   text-align: center;
 }
 
 .row {
-  margin: 2rem 0;
-  
+  margin: 2rem 2rem;
 }
 
 .heading {
@@ -92,5 +91,19 @@ nav {
 }
 
 .heading2 {
-  text-align: left;
+  text-align: justify;
+}
+
+.colum-1-2 {
+  float: left;
+}
+
+.colum-2-2{
+  float:right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
