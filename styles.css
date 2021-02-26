@@ -12,13 +12,17 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 nav {
-  width:100%;
+  
+  width: calc(100% - 3rem);
   height: 46px;
-  background-color: greenyellow;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 1.5rem;
   z-index: 1;
 }
 
@@ -31,7 +35,7 @@ nav {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-color: greenyellow;
+
   float: right;
 }
 
@@ -43,7 +47,7 @@ nav {
 .nav-item-link,
 .nav-item-link:link,
 .nav-item-link:visited {
-  color: red;
+  color: white;
   text-decoration: none;
   padding: 16px 14px;
   text-align: center;
@@ -51,13 +55,15 @@ nav {
 }
 
 .nav-item-link:hover {
-  background-color: hotpink;
+  background-color: #487eb0;
 }
 
 .header {
   height: 90vh;
   width: 100%;
-  background-color: grey;
+  background-image: url("img/cover/keyboard-large.jpg");
+  background-color: rgba(0,0,0,.5);
+  background-size: cover;
   position: relative;
 }
 
@@ -65,24 +71,29 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  border: solid 3px rgba(0, 0, 0, .3) ;
+  background-color: rgba(0, 0, 0, .3);
+  border-radius: 10px;
   position:absolute;
   text-transform: uppercase;
   text-align: center;
+  color: #487eb0;
 }
 
 .header-box--title{
   font-size: 3rem;
-  color: gainsboro;
+ 
+  margin-bottom: 1rem;
 }
 
 .header-box--description{
   font-size: 1.6rem;
-  color: rgb(221, 221, 221);
+ 
 }
 
 .projects {
   width:100%;
-  background-image: linear-gradient(to right bottom, rgb(230, 230, 230), rgb(161, 161, 161));
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0,0.6),  rgba(72, 126, 176, 1));
   padding: 5rem;
   text-align: center;
 }
