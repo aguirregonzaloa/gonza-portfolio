@@ -154,11 +154,49 @@ nav {
   font-weight: 300;
   letter-spacing: 2px;
   word-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.aboutme-text--read,
+.aboutme-text--read:link,
+.aboutme-text--read:visited {
+  color: greenyellow;
+  padding: 1rem;
+  border: none;
+}
+.aboutme-text--read:hover {
+  background-color: greenyellow;
+  color: white;
+  border-bottom: white;
 }
 
 .aboutme-img {
   float: left;
   width: 50%;
+}
+
+.aboutme-modal--content{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+
+.aboutme-modal{
+  background-color: rgba(0,0,0,.5);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+}
+
+#modal:target {
+  opacity:1;
+  pointer-events:auto;
 }
 
 .footer {
