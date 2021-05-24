@@ -12,13 +12,47 @@
   --color-primary-dark: #285f92;
 }
 
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 html {
-  font-size: 62.5%;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
+
+@media only screen and (max-width: 56.25em) {
+     html{
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+}
+       
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   padding: 0 1.5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+     body{
+        padding: 0; //1 rem = 8px, 8/16 = 50%
+    }
 }
 
 nav {
@@ -31,6 +65,16 @@ nav {
   left: 1.5rem;
   z-index: 1;
 }
+
+
+
+@media only screen and (max-width: 56.25em) {
+     nav{
+        background-color: white;
+       
+      }
+}
+
 
 .logo{
   float:left;
@@ -62,6 +106,22 @@ nav {
 
 .nav-item-link:hover {
   background-color: var(--color-primary);
+}
+
+@media only screen and (max-width: 56.25em) {
+     .nav-item-link,
+      .nav-item-link:link,
+      .nav-item-link:visited {
+        color: black;
+        text-decoration: none;
+        padding: 16px 14px;
+        text-align: center;
+        display: block;
+      }
+
+      .nav-item-link:hover {
+        background-color: var(--color-primary);
+      }
 }
 
 
@@ -288,3 +348,21 @@ nav {
 
 }
 
+/*
+@media only screen and (max-width: 56.25em) {
+     html{
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    body {
+      padding: 0; } 
+     nav {  
+         background-color: white;
+    } //1 rem = 8px, 8/16 = 50%
+}*/
+
+@media only screen and (max-width: 56.25em) {
+     nav{
+        background-color: white;
+        color: black; 
+      }
+}
